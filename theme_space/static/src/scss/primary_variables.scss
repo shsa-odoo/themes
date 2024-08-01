@@ -1,0 +1,175 @@
+//------------------------------------------------------------------------------//
+// Odoo declares many CSS rules, most entirely customizable by overriding the related SCSS variables.
+// These variables can be overridden through the $o-website-value-palettes map
+// Presets
+//------------------------------------------------------------------------------//
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name':              'theme-space-2',
+
+        // Header
+        'header-template':                  'vertical',
+        'hamburger-position':               'right',
+        'logo-height':                      3rem,
+        'fixed-logo-height':                2rem,
+        'header-links-style':               'pills',
+
+        // Font
+        'font':                             'Poppins',
+
+        // Buttons
+        'btn-padding-y':                    .5rem,
+        'btn-padding-x':                    1.35rem,
+        'btn-padding-y-sm':                 .3rem,
+        'btn-padding-x-sm':                 .9rem,
+        'btn-padding-y-lg':                 .6rem,
+        'btn-padding-x-lg':                 1.8rem,
+        'btn-border-radius':                10rem,
+        'btn-border-radius-sm':             10rem,
+        'btn-border-radius-lg':             10rem,
+        'btn-ripple':                       true,
+
+        'input-padding-y':                  .45rem,
+        'input-padding-y-sm':               .3rem,
+        'input-padding-y-lg':               .6rem,
+
+        // Footer
+        'footer-template':                  'centered',
+        'footer-effect':                    'slideout_slide_hover',
+        'footer-scrolltop':                 true,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Embed any font on your website.
+// The Website Builder automatically makes them available in the font selector.
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-font-configs: (
+    'Abel': (
+        'family': ('Abel', sans-serif),
+        'url': 'Abel:300,300i,400,400i,700,700i',
+        'properties' : (
+            'base': (
+                'font-size-base':           (18 / 16) * 1rem,
+                'header-font-size':         (18 / 16) * 1rem,
+            ),
+        )
+    ),
+    'Dosis': (
+        'family': ('Dosis', sans-serif),
+        'url': 'Dosis:300,300i,400,400i,700,700i',
+        'properties' : (
+            'base': (
+                'font-size-base':           (18 / 16) * 1rem,
+                'header-font-size':         (18 / 16) * 1rem,
+            ),
+        )
+    ),
+    'Karla': (
+        'family': ('Karla', sans-serif),
+        'url': 'Karla:300,300i,400,400i,700,700i',
+    ),
+    'Laila': (
+        'family': ('Laila', serif),
+        'url': 'Laila:300,300i,400,400i,600,600i',
+    ),
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'Poppins': (
+        'family': ('Poppins', sans-serif),
+        'url': 'Poppins:300,300i,400,400i,600,600i',
+        'properties': (
+            'base': (
+                'header-font-size':         (15 / 16) * 1rem,
+                'font-size-base':           (15 / 16) * 1rem,
+            ),
+        )
+    ),
+    'Raleway': (
+        'family': ('Raleway', sans-serif),
+        'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+);
+
+// Headings
+
+$o-theme-h4-font-size-multiplier:           1.75;
+$o-theme-h5-font-size-multiplier:           1.5;
+$o-theme-h6-font-size-multiplier:           1.25;
+
+$o-theme-headings-font-weight:              400;
+
+// Texts
+
+$o-theme-font-size-lg-multiplier:           1.25;
+$o-theme-font-size-sm-multiplier:           .875;
+
+$o-theme-font-weight-light:                 300;
+$o-theme-font-weight-normal:                400;
+$o-theme-font-weight-bold:                  700;
+
+// Buttons
+
+$o-theme-btn-font-weight:                   400;
+
+//------------------------------------------------------------------------------//
+// The Website Builder relies on palettes composed of five named colors.
+// Defining those in your theme ensures it stays consistent.
+// Colors
+//------------------------------------------------------------------------------//
+
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'theme-space-1': (
+            'o-color-1':                        #2c3e50, // Deep Navy
+            'o-color-2':                        #34495e, // Charcoal
+            'o-color-3':                        #7f8c8d, // Slate Gray
+            'o-color-4':                        #bdc3c7, // Light Silver
+            'o-color-5':                        #ecf0f1, // Off-White
+        ),
+        'theme-space-2': (
+            'o-color-1':                        #8e44ad, // Burgundy
+            'o-color-2':                        #9b59b6, // Light Burgundy
+            'o-color-3':                        #c39bd3, // Pale Burgundy
+            'o-color-4':                        #d7bde2, // Very Light Burgundy
+            'o-color-5':                        #f4ecf7, // Off-White
+        ),
+        'theme-space-3': (
+            'o-color-1':                        #f39c12, // Gold
+            'o-color-2':                        #f1c40f, // Bright Gold
+            'o-color-3':                        #f7dc6f, // Pale Gold
+            'o-color-4':                        #f9e79f, // Very Light Gold
+            'o-color-5':                        #fef9e7, // Off-White
+        ),
+        'theme-space-4': (
+            'o-color-1':                        #2c3e50, // Deep Navy
+            'o-color-2':                        #34495e, // Charcoal
+            'o-color-3':                        #7f8c8d, // Slate Gray
+            'o-color-4':                        #bdc3c7, // Light Silver
+            'o-color-5':                        #ecf0f1, // Off-White
+        ),
+        'theme-space-5': (
+            'o-color-1':                        #8e44ad, // Burgundy
+            'o-color-2':                        #9b59b6, // Light Burgundy
+            'o-color-3':                        #c39bd3, // Pale Burgundy
+            'o-color-4':                        #d7bde2, // Very Light Burgundy
+            'o-color-5':                        #f4ecf7, // Off-White
+        ),
+        'theme-space-6': (
+            'o-color-1':                        #f39c12, // Gold
+            'o-color-2':                        #f1c40f, // Bright Gold
+            'o-color-3':                        #f7dc6f, // Pale Gold
+            'o-color-4':                        #f9e79f, // Very Light Gold
+            'o-color-5':                        #fef9e7, // Off-White
+        ),
+    )
+);
+
+
+// Add the created palette to the list of palettes offered by the Website Builder.
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'theme-space-2');
