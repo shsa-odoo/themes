@@ -1,3 +1,98 @@
+/**
+ * @file
+ * This SCSS file is part of the Odoo website theme configuration. It contains various settings and customizations
+ * for the theme, focusing on colors, fonts, buttons, headers, and footers. These settings can be overridden
+ * through SCSS variables to create a consistent and visually appealing theme.
+ *
+ * The configurations defined in this file include:
+ *
+ * 1. **Presets**: Initial settings for the theme, including header layout, button styles, and font choices.
+ *    - `$o-website-values-palettes`: A map defining preset values such as header template, button padding, and font selection.
+ *      Example:
+ *      ```scss
+ *      $o-website-values-palettes: (
+ *          (
+ *              'color-palettes-name': 'theme-space-2',
+ *              'header-template': 'vertical',
+ *              'hamburger-position': 'right',
+ *              'logo-height': 3rem,
+ *              'fixed-logo-height': 2rem,
+ *              'header-links-style': 'pills',
+ *              'font': 'Poppins',
+ *              // Additional settings...
+ *          ),
+ *      );
+ *      ```
+
+ * 2. **Fonts**: Configuration for embedding and using custom fonts in the Odoo website theme.
+ *    - `$o-theme-font-configs`: A map that lists available fonts, their properties, and URLs for embedding.
+ *      Example:
+ *      ```scss
+ *      $o-theme-font-configs: (
+ *          'Poppins': (
+ *              'family': ('Poppins', sans-serif),
+ *              'url': 'Poppins:300,300i,400,400i,600,600i',
+ *              'properties': (
+ *                  'base': (
+ *                      'header-font-size': (15 / 16) * 1rem,
+ *                      'font-size-base': (15 / 16) * 1rem,
+ *                  ),
+ *              )
+ *          ),
+ *          // Additional fonts...
+ *      );
+ *      ```
+
+ * 3. **Headings and Texts**: Settings for heading sizes and font weights for different text elements.
+ *    - Example variables:
+ *      ```scss
+ *      $o-theme-h4-font-size-multiplier: 1.75;
+ *      $o-theme-font-weight-bold: 700;
+ *      ```
+
+ * 4. **Colors**: Primary color palette definitions for the theme to ensure a cohesive visual design.
+ *    - `$o-color-palettes`: A map that defines the color palettes for different themes.
+ *      Example:
+ *      ```scss
+ *      $o-color-palettes: map-merge($o-color-palettes, (
+ *          'theme-space-2': (
+ *              'o-color-1': #8e44ad, // Burgundy
+ *              'o-color-2': #9b59b6, // Light Burgundy
+ *              'o-color-3': #c39bd3, // Pale Burgundy
+ *              'o-color-4': #d7bde2, // Very Light Burgundy
+ *              'o-color-5': #f4ecf7, // Off-White
+ *          ),
+ *          // Additional palettes...
+ *      ));
+ *      ```
+
+ * 5. **Color Palette Compatibility Indexes**: Maps the custom themes to generic color palettes for compatibility purposes.
+ *    - Example variable:
+ *      ```scss
+ *      $o-color-palettes-compatibility-indexes: (
+ *          1: 'theme-space-1',
+ *          2: 'generic-21',
+ *          // Additional mappings...
+ *      );
+ *      ```
+
+ * 6. **Selected Color Palettes**: Appends the created palette to the list of palettes offered by the Odoo Website Builder.
+ *    - Example variable:
+ *      ```scss
+ *      $o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'theme-space-2');
+ *      ```
+
+ * @note
+ * The use of the `map-merge` function allows for flexible and extendable configurations, ensuring that new values
+ * can be easily integrated into the existing maps without overriding the default settings entirely. This helps in
+ * maintaining the integrity of the theme while allowing for customizations.
+ *
+ * The file is essential for defining the visual identity of the Odoo website theme, making it customizable
+ * through various SCSS variables that control the appearance of different elements on the website.
+ */
+
+
+
 //------------------------------------------------------------------------------//
 // Odoo declares many CSS rules, most entirely customizable by overriding the related SCSS variables.
 // These variables can be overridden through the $o-website-value-palettes map
@@ -125,13 +220,13 @@ $o-theme-btn-font-weight:                   400;
 
 $o-color-palettes: map-merge($o-color-palettes,
     (
-        'theme-space-1': (
-            'o-color-1':                        #2c3e50, // Deep Navy
-            'o-color-2':                        #34495e, // Charcoal
-            'o-color-3':                        #7f8c8d, // Slate Gray
-            'o-color-4':                        #bdc3c7, // Light Silver
-            'o-color-5':                        #ecf0f1, // Off-White
-        ),
+        // 'theme-space-1': (
+        //     'o-color-1':                        #2c3e50, // Deep Navy
+        //     'o-color-2':                        #34495e, // Charcoal
+        //     'o-color-3':                        #7f8c8d, // Slate Gray
+        //     'o-color-4':                        #bdc3c7, // Light Silver
+        //     'o-color-5':                        #ecf0f1, // Off-White
+        // ),
         'theme-space-2': (
             'o-color-1':                        #8e44ad, // Burgundy
             'o-color-2':                        #9b59b6, // Light Burgundy
@@ -146,26 +241,19 @@ $o-color-palettes: map-merge($o-color-palettes,
             'o-color-4':                        #f9e79f, // Very Light Gold
             'o-color-5':                        #fef9e7, // Off-White
         ),
-        'theme-space-4': (
-            'o-color-1':                        #2c3e50, // Deep Navy
-            'o-color-2':                        #34495e, // Charcoal
-            'o-color-3':                        #7f8c8d, // Slate Gray
-            'o-color-4':                        #bdc3c7, // Light Silver
-            'o-color-5':                        #ecf0f1, // Off-White
-        ),
-        'theme-space-5': (
-            'o-color-1':                        #8e44ad, // Burgundy
-            'o-color-2':                        #9b59b6, // Light Burgundy
-            'o-color-3':                        #c39bd3, // Pale Burgundy
-            'o-color-4':                        #d7bde2, // Very Light Burgundy
-            'o-color-5':                        #f4ecf7, // Off-White
-        ),
-        'theme-space-6': (
-            'o-color-1':                        #f39c12, // Gold
-            'o-color-2':                        #f1c40f, // Bright Gold
-            'o-color-3':                        #f7dc6f, // Pale Gold
-            'o-color-4':                        #f9e79f, // Very Light Gold
-            'o-color-5':                        #fef9e7, // Off-White
+    )
+);
+
+
+// These are not working why ?
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
+    (
+        'theme-space-1': (
+            'alpha':                        #2c3e50, // Deep Navy
+            'beta':                        #34495e, // Charcoal
+            'gamma':                        #7f8c8d, // Slate Gray
+            'delta':                        #bdc3c7, // Light Silver
+            'epsilon':                        #ecf0f1, // Off-White
         ),
     )
 );
@@ -173,3 +261,58 @@ $o-color-palettes: map-merge($o-color-palettes,
 
 // Add the created palette to the list of palettes offered by the Website Builder.
 $o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'theme-space-2');
+
+// These are not working why ?
+$o-color-palettes-compatibility-indexes: (
+    1: 'theme-space-1',
+    2: 'generic-21',
+    3: 'generic-22',
+    4: 'generic-18',
+    5: 'generic-19',
+    6: 'generic-20',
+    7: 'generic-1',
+    8: 'generic-2',
+    9: 'generic-3',
+    10: 'generic-4',
+    11: 'generic-5',
+    12: 'generic-6',
+    13: 'generic-7',
+    14: 'generic-8',
+    15: 'generic-9',
+    16: 'generic-10',
+    17: 'generic-11',
+    18: 'generic-12',
+    19: 'generic-13',
+    20: 'generic-14',
+    21: 'generic-15',
+    22: 'generic-16',
+    23: 'generic-17',
+);
+
+// what are these :
+
+/*
+    $o-color-palettes-compatibility-indexes ?
+    $o-bg-shapes:change-shape-colors-mapping ??
+
+what about
+
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
+    (
+        'theme-space-1': (
+            'alpha':                            #ffffff,
+            'beta':                             #cdd0a2,
+            'gamma':                            #b4bbb9,
+            'delta':                            #242327,
+            'epsilon':                          #957985,
+        ),
+        'theme-space-2': (
+            'alpha':                            #ffffff,
+            'beta':                             #f4f1db,
+            'gamma':                            #928371,
+            'delta':                            #53453f,
+            'epsilon':                          #c31737,
+        ),
+    }
+
+*/
