@@ -11,5 +11,11 @@
         # 'views/footer.xml',
         # 'views/header.xml',
     ],
+    'assets': {
+        'web.assets_frontend': [
+            'theme_space/static/fonts/*',
+            'theme_space/static/src/scss/font.scss',
+        ],
+    },
     'license': 'LGPL-3',
 }
