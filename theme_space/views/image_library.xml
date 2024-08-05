@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- SNIPPETS -->
+<record id="s_banner_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_banner_default_image</field>
+    <field name="name">website.s_banner_default_image</field>
+    <field name="url">/theme_space/static/src/img/background/img1.jpg</field>
+</record>
+<record id="s_banner_default_image_2" model="theme.ir.attachment">
+    <field name="key">website.s_banner_default_image_2</field>
+    <field name="name">website.s_banner_default_image_2</field>
+    <field name="url">/theme_space/static/src/img/background/img2.jpg</field>
+</record>
+<record id="s_banner_default_image_3" model="theme.ir.attachment">
+    <field name="key">website.s_banner_default_image_3</field>
+    <field name="name">website.s_banner_default_image_3</field>
+    <field name="url">/theme_space/static/src/img/background/img3.jpg</field>
+</record>
+<record id="s_text_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_text_cover_default_image</field>
+    <field name="name">website.s_text_cover_default_image</field>
+    <field name="url">website.s_banner_default_image</field>
+</record>
+<record id="s_popup_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_popup_default_image</field>
+    <field name="name">website.s_popup_default_image</field>
+    <field name="url">/theme_space/static/src/img/background/img4.jpg</field>
+</record>
+<record id="s_cover_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_cover_default_image</field>
+    <field name="name">website.s_cover_default_image</field>
+    <field name="url">/theme_space/static/src/img/background/img5.jpg</field>
+</record>
+<record id="s_text_image_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_text_image_default_image</field>
+    <field name="name">website.s_text_image_default_image</field>
+    <field name="url">/theme_space/static/src/img/background/img6.jpg</field>
+</record>
+<record id="s_image_text_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_image_text_default_image</field>
+    <field name="name">website.s_image_text_default_image</field>
+    <field name="url">/theme_space/static/src/img/background/img7.jpg</field>
+</record>
+<record id="s_picture_default_image" model="theme.ir.attachment">
+    <field name="key">website.s_picture_default_image</field>
+    <field name="name">website.s_picture_default_image</field>
+    <field name="url">/theme_space/static/src/img/background/img8.jpg</field>
+</record>
+<record id="library_image_02" model="theme.ir.attachment">
+    <field name="key">website.library_image_02</field>
+    <field name="name">website.library_image_02</field>
+    <field name="url">/theme_space/static/src/img/background/img9.jpg</field>
+</record>
+<record id="library_image_03" model="theme.ir.attachment">
+    <field name="key">website.library_image_03</field>
+    <field name="name">website.library_image_03</field>
+    <field name="url">/theme_space/static/src/img/background/img1.jpg</field>
+</record>
+<record id="library_image_05" model="theme.ir.attachment">
+    <field name="key">website.library_image_05</field>
+    <field name="name">website.library_image_05</field>
+    <field name="url">/theme_space/static/src/img/background/img2.jpg</field>
+</record>
+<record id="library_image_07" model="theme.ir.attachment">
+    <field name="key">website.library_image_07</field>
+    <field name="name">website.library_image_07</field>
+    <field name="url">/theme_space/static/src/img/background/img3.jpg</field>
+</record>
+<record id="library_image_08" model="theme.ir.attachment">
+    <field name="key">website.library_image_08</field>
+    <field name="name">website.library_image_08</field>
+    <field name="url">/theme_space/static/src/img/background/img4.jpg</field>
+</record>
+</odoo>

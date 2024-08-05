@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cover" inherit_id="website.s_cover">
+    <!-- Section -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_full_screen_height" separator=" "/>
+    </xpath>
+    <!-- Title & Paragraph -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        <b>Lets Explore!</b>
+    </xpath>
+    <xpath expr="//p[hasclass('lead')]" position="replace" mode="inner">
+        Discover the world with us.
+    </xpath>
+    <!-- Remove the button -->
+    <xpath expr="//p[2]" position="replace"/>
+</template>
+
+</odoo>
