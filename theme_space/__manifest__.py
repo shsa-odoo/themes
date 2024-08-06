@@ -18,12 +18,12 @@
         'views/snippets/s_image_text.xml',
         'views/snippets/s_product_catalog.xml',
         'views/snippets/s_banner.xml',
-        # 'views/footer.xml',
-        # 'views/header.xml',
+        'views/footer.xml',
+        'views/header.xml',
     ],
     'images': [
         'static/description/space_description.jpg',
-        'static/description/theme_space.jpg',
+        'static/description/space_screenshot.jpg',
     ],
     'images_preview_theme': {
         'website.s_banner_default_image': '/theme_space/static/src/img/background/img1.jpg',
@@ -32,7 +32,7 @@
         'website.s_picture_default_image': '/theme_space/static/src/img/background/img8.jpg',
     },
     'configurator_snippets': {
-        'homepage': ['s_cover', 's_text_image', 's_title', 's_features', 's_image_text', 's_product_catalog'],
+        'homepage': ['s_cover', 's_text_image', 's_title', 's_features', 's_image_text', 's_product_catalog', 's_banner'],
     },
     'assets': {
         'web.assets_frontend': [
