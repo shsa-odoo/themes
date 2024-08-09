@@ -6,7 +6,7 @@
     <xpath expr="//section" position="attributes">
         <attribute name="class" add="o_cc o_cc4 pt72 pb72" remove="pt32 pb32" separator=" "/>
     </xpath>
-    <!-- Add space after title -->
+    <!-- Add Purple after title -->
     <xpath expr="//h2" position="after">
         <p><br/></p>
     </xpath>
