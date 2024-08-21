@@ -10,6 +10,10 @@
     <xpath expr="//h1" position="replace" mode="inner">
         We Make It Happen!
     </xpath>
+    <!-- Remve the image -->
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
+    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
 </template>
 
 </odoo>
