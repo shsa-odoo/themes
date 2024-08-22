@@ -10,10 +10,18 @@
     <xpath expr="//h1" position="replace" mode="inner">
         We Make It Happen!
     </xpath>
-    <!-- Remve the image -->
-    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
-    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
-    <xpath expr="//div[hasclass('o_grid_item_image')]" position="replace"/>
+
+    <xpath expr="//img[@src='/web/image/website.s_banner_default_image_2']" position="attributes">
+        <attribute name="src">/theme_purple/static/src/img/background/img1.jpg</attribute>
+    </xpath>
+
+    <xpath expr="//img[@src='/web/image/website.s_banner_default_image_3']" position="attributes">
+        <attribute name="src">/theme_purple/static/src/img/background/img2.jpg</attribute>
+    </xpath>
+
+    <xpath expr="//img[@src='/web/image/website.s_banner_default_image']" position="attributes">
+        <attribute name="src">/theme_purple/static/src/img/background/img3.jpg</attribute>
+    </xpath>
 </template>
 
 </odoo>

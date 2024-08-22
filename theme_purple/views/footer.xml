@@ -11,14 +11,7 @@
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">Contact Us</a></li>
                                     <li><a href="#">Careers</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <h4>Services</h4>
-                                <ul>
-                                    <li><a href="#">Web Development</a></li>
-                                    <li><a href="#">Mobile Development</a></li>
-                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">Services</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4">

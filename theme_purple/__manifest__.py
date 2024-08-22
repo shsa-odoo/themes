@@ -6,7 +6,6 @@
     'category': 'Theme/Creative',
     'depends': ['website'],
     'data': [
-        'views/image_library.xml',
         'views/snippets/s_banner.xml',
         # 'views/footer.xml',
         # 'views/header.xml',
