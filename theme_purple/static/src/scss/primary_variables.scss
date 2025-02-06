@@ -111,7 +111,7 @@ $o-website-values-palettes: (
         'header-links-style':               'pills',
 
         // Font
-        'font':                             'Oxygen-Regular',
+        'font':                             'Abel',
 
         // Buttons
         'btn-padding-y':                    .5rem,
@@ -216,4 +216,4 @@ $o-color-palettes: map-merge($o-color-palettes,
 
 
 // Add the created palette to the list of palettes offered by the Website Builder.
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'theme-purple-2');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'theme-purple-4');

@@ -6,20 +6,20 @@
     'category': 'Theme/Creative',
     'depends': ['website'],
     'data': [
-        'views/snippets/s_banner.xml',
-        # 'views/footer.xml',
-        # 'views/header.xml',
+        'views/snippets/s_sidegrid.xml',
+        'views/footer.xml',
+        'views/header.xml',
     ],
 
     'images': [
-        'static/description/theme_description.jpg',
         'static/description/theme_purple.jpg',
+        # 'static/description/pexels-pixabay-433989.jpg', # any screenshot of website so created can act as a preview
     ],
     'images_preview_theme': {
-        'website.s_banner_default_image': '/theme_purple/static/src/img/background/img1.jpg',
+        # List of images changed in the theme: urls of the images
     },
     'configurator_snippets': {
-        'homepage': ['s_banner'],
+        'homepage': ['s_sidegrid'],
     },
     'assets': {
         'web._assets_primary_variables': [
